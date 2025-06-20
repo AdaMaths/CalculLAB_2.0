@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NumerationOptionsWindow</class>
+ <widget class="QMainWindow" name="NumerationOptionsWindow">
+  <property name="geometry">
+   <rect>
+    <x>200</x>
+    <y>200</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Options de Numérisation</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f0f0f0;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                              stop:0 #e0eafc, stop:1 #cfdef3);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="main_layout">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="title_label">
+      <property name="text">
+       <string>Options de Numérisation</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold 20px 'Segoe UI';
+color: #34495e;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.7);
+border-radius: 8px;</string>
+     </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="buttons_layout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="eq_diff_button">
+        <property name="text">
+         <string>Équations Diff.</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #a3bded;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #8ba8d1;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="optimisation_button">
+        <property name="text">
+         <string>Optimisation</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #f9a8d4;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #f480b7;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="automatique_button">
+        <property name="text">
+         <string>Automatique</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #a5d6a7;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #82c684;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="integration_button">
+        <property name="text">
+         <string>Intégration</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #80deea;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #4bc8d6;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="interpolation_button">
+        <property name="text">
+         <string>Interpolation</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #ffcdd2;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #ffabb5;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="signal_button">
+        <property name="text">
+         <string>Traitement signal</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    font: 14px 'Segoe UI';
+    background-color: #d1c4e9;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+QPushButton:hover {
+    background-color: #b39ddb;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="back_button">
+      <property name="text">
+       <string>Retour</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    font: 12px 'Segoe UI';
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+QPushButton:hover {
+    background-color: #95a5a6;
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

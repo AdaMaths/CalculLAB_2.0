@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Application de Calcul Scientifique</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f0f0f0;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                              stop:0 #f8f9fa, stop:1 #e9ecef);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <property name="leftMargin">
+     <number>25</number>
+    </property>
+    <property name="topMargin">
+     <number>35</number>
+    </property>
+    <property name="rightMargin">
+     <number>25</number>
+    </property>
+    <property name="bottomMargin">
+     <number>35</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="welcome_label">
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Segoe UI', Arial, sans-serif;
+font-size: 24px;
+font-weight: bold;
+color: #2c3e50;
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+border-bottom: 2px solid #e0e0e0;</string>
+      </property>
+      <property name="text">
+       <string>Bienvenue dans l'Application de Calcul Scientifique</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="data_science_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: bold 14px 'Segoe UI', Arial;
+background-color: #fff9c4;
+color: #333333;
+border: none;
+border-radius: 10px;
+padding: 15px;
+margin: 8px 10px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+QPushButton:hover {
+background-color: #ffe694;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}</string>
+      </property>
+      <property name="text">
+       <string>Outils Data Science</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="energy_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: bold 14px 'Segoe UI', Arial;
+background-color: #ffcdd2;
+color: #333333;
+border: none;
+border-radius: 10px;
+padding: 15px;
+margin: 8px 10px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+QPushButton:hover {
+background-color: #ffb3c1;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}</string>
+      </property>
+      <property name="text">
+       <string>Gestion Énergétique</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="laser_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: bold 14px 'Segoe UI', Arial;
+background-color: #bbdefb;
+color: #333333;
+border: none;
+border-radius: 10px;
+padding: 15px;
+margin: 8px 10px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+QPushButton:hover {
+background-color: #90caf9;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}</string>
+      </property>
+      <property name="text">
+       <string>Simulations Laser</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="navier_stokes_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: bold 14px 'Segoe UI', Arial;
+background-color: #d1c4e9;
+color: #333333;
+border: none;
+border-radius: 10px;
+padding: 15px;
+margin: 8px 10px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+QPushButton:hover {
+background-color: #b39ddb;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}</string>
+      </property>
+      <property name="text">
+       <string>Équations Navier-Stokes</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="numerisation_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: bold 14px 'Segoe UI', Arial;
+background-color: #c8e6c9;
+color: #333333;
+border: none;
+border-radius: 10px;
+padding: 15px;
+margin: 8px 10px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+QPushButton:hover {
+background-color: #a5d6a7;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}</string>
+      </property>
+      <property name="text">
+       <string>Numérisation</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="quit_button">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font-family: 'Segoe UI', Arial, sans-serif;
+font-size: 14px;
+font-weight: bold;
+background-color: #e74c3c;
+color: white;
+border: none;
+border-radius: 6px;
+padding: 8px 16px;
+margin-top: 10px;
+max-width: 120px;
+}
+QPushButton:hover {
+background-color: #c62828;
+}</string>
+      </property>
+      <property name="text">
+       <string>Quitter</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,40 @@
+BV-- Table des docteurs
+CREATE TABLE IF NOT EXISTS docteurs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT,
+    prenom TEXT,
+    postnom TEXT,
+    telephone TEXT,
+    matricule TEXT UNIQUE,
+    specialisation TEXT
+);
+
+-- Table des patients
+CREATE TABLE IF NOT EXISTS patients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT,
+    prenom TEXT,
+    postnom TEXT,
+    telephone TEXT,
+    poids REAL,
+    taille REAL,
+    genre TEXT,
+    age TEXT,
+    numero_unique TEXT UNIQUE
+);
+
+-- Table des plaintes (liée à un patient)
+CREATE TABLE IF NOT EXISTS plaintes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER,
+    plainte TEXT,
+    FOREIGN KEY(patient_id) REFERENCES patients(id)
+);
+
+-- Table des horaires des docteurs
+CREATE TABLE IF NOT EXISTS horaires_docteur (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    docteur_id INTEGER,
+    jour TEXT,
+    FOREIGN KEY(docteur_id) REFERENCES docteurs(id)
+);

@@ -1,0 +1,17 @@
+fastapi              # Framework web moderne pour créer des API rapides en Python
+uvicorn              # Serveur ASGI performant pour exécuter FastAPI
+python-jose          # Gestion des JWT et de la sécurité (signatures, tokens)
+passlib              # Outils de hachage de mots de passe pour l'authentification
+python-multipart     # Gestion des formulaires multipart (upload de fichiers)
+pydantic             # Validation et sérialisation des données avec les types Python
+numpy                # Calcul scientifique et manipulation de tableaux numériques
+scipy                # Outils mathématiques et scientifiques avancés
+pandas               # Manipulation et analyse de données tabulaires
+matplotlib           # Visualisation et création de graphiques
+scikit-learn         # Machine learning et outils de prétraitement des données
+sympy                # Calcul formel et manipulation symbolique en mathématiques
+pulp                 # Modélisation et résolution de problèmes d’optimisation linéaire
+PyQt5                # Création d’interfaces graphiques (GUI) avec Qt
+requests             # Requêtes HTTP simples et efficaces
+#PyQt5-tools          # Outils complémentaires pour PyQt5 (ex: Qt Designer)
+streamlit          # Création d'applications web interactives pour la data science  
