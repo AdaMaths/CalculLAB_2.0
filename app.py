@@ -25,7 +25,7 @@ if page == "🏠 Accueil":
     MainWindow()
 
 elif page == "💡 Numérisation & Dématérialisation":
-    afficher_numerisation_options()
+    NumerationOptionsWindow()
 
 # Pied de page ou informations supplémentaires
 st.sidebar.markdown("---")
