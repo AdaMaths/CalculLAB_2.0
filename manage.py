@@ -1,6 +1,5 @@
 import streamlit as st
 import sys
-from PyQt5.QtWidgets import QApplication
 from ui.page_accueil import MainWindow
 
 def main():
