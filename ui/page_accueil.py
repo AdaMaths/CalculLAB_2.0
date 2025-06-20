@@ -1,3 +1,4 @@
+import streamlit as st
 import os
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QLabel
