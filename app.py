@@ -22,7 +22,7 @@ page = st.sidebar.radio(
 
 # Affichage des pages selon le choix
 if page == "🏠 Accueil":
-    afficher_page_accueil()
+    MainWindow()
 
 elif page == "💡 Numérisation & Dématérialisation":
     afficher_numerisation_options()
