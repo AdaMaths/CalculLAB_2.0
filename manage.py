@@ -1,12 +1,8 @@
 import streamlit as st
-import sys
-from PyQt5.QtWidgets import QApplication
-from ui.page_accueil import MainWindow
+from ui.page_accueil import main_page  # Adapte ce import selon ton projet
 
 def main():
-    app = QApplication(sys.argv)
-    main_window = MainWindow()
-    main_window.show()
-    sys.exit(app.exec_())
+    main_page()  # Affiche la page principale dans Streamlit
+
 if __name__ == "__main__":
     main()
